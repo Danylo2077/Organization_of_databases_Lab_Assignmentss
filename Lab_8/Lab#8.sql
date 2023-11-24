@@ -11,7 +11,7 @@ CREATE TABLE users (
 );
 
 
-//Таблиця для прив'язки користувачів до проекту 
+//Таблиця для привязки користувачів до проекту 
 CREATE TABLE project_members (
     id INT AUTO_INCREMENT PRIMARY KEY,
     project_id INT,
@@ -44,7 +44,7 @@ CREATE TABLE task_assignees (
 );
 
 
-//Таблиця для зберігання інформації про файли пов'язані з проектами
+//Таблиця для зберігання інформації про файли (проектів)
 CREATE TABLE project_files (
     id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(255) NOT NULL,
@@ -56,7 +56,7 @@ CREATE TABLE project_files (
 
 
 
-//Таблиця для зберігання інформації про файли, пов'язані з задачами
+//Таблиця для зберігання інформації про файли (задач)
 CREATE TABLE task_files (
     id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(255) NOT NULL,
