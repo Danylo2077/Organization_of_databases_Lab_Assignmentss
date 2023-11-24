@@ -13,7 +13,6 @@ CREATE TABLE users (
 
 //Таблиця для привязки користувачів до проекту 
 CREATE TABLE project_members (
-    id INT AUTO_INCREMENT PRIMARY KEY,
     project_id INT,
     user_id INT,
     PRIMARY KEY (project_id, user_id),
